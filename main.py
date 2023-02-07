@@ -38,9 +38,11 @@ class Cidade():
             print(f"Cidade: {cidade.nome} - Distância: {cidade.distancia}")
 
 
+rota = []
+
+
 # Criar Busca Gulosa:
 
-rota = []
 
 def buscaGulosa(cidade_inicial, cidade_final):
     rota.append(cidade_inicial)
@@ -87,7 +89,7 @@ def buscaAestrela(cidade_inicial, cidade_final):
         #print(cidade_mais_perto.nome)
         if cidade_mais_perto == cidade_final:
             rota.append(cidade_final)
-            print("--- Melhor Trajeto pela Busca Gulosa ---")
+            print("--- Melhor Trajeto pela Busca A* ---")
             for c in rota:
                 print(c.nome)
 
